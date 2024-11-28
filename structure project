@@ -1,0 +1,20 @@
+go-music-server/
+│
+├── cmd/             # Главная точка входа
+│   └── main.go      # Основной файл сервера
+│
+├── internal/        # Основная логика
+│   ├── player/      # Модуль воспроизведения
+│   │   └── player.go
+│   ├── scanner/     # Модуль сканирования файлов
+│   │   └── scanner.go
+│   ├── api/         # REST API
+│   │   └── handler.go
+│   └── models/      # Описание структур
+│       └── file.go
+│
+├── test/            # Тесты
+│   └── player_test.go
+│
+├── go.mod           # Модуль Go
+└── go.sum           # Зависимости
